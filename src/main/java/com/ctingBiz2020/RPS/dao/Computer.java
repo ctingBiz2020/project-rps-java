@@ -9,9 +9,9 @@ public class Computer {
 		int lose;
 		int tie;
 	}
+	public int player;
+	public int computer;
 	
-	int player;
-	int computer;
-	
+	Score score = new Score();
 }
 
