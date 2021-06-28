@@ -4,14 +4,15 @@ import lombok.Data;
 
 @Data
 public class Computer {
-	class Score {
-		int win;
-		int lose;
-		int tie;
+	@Data
+	public class Score {
+		private int win;
+		private int lose;
+		private int tie;
 	}
-	public int player;
-	public int computer;
-	
+
+	private int player;
+	private int computer;
+
 	Score score = new Score();
 }
-

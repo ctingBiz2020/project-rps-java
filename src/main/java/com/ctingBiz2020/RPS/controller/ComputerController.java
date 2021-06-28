@@ -15,10 +15,11 @@ public class ComputerController {
 
 	@PostMapping("computer")
 	@ResponseBody
-	public int computerSelection(@RequestBody Computer data) {
+	public Computer computerSelection(@RequestBody Computer data) {
 		ComputerService computerService = new ComputerService();
-		
-		int newData = computerService.validateResult(data);
+
+		System.out.println(data.toString());
+		Computer newData = computerService.validateResult(data);
 		return newData;
 	}
 
