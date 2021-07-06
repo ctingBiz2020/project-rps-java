@@ -28,7 +28,7 @@ public class ComputerController {
 		return newData;
 	}
 	
-	@GetMapping
+	@GetMapping("")
 	public String testConncetion() {
 		return "This is Chong backend!";
 	}
